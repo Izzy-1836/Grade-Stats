@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class GradeStats {
-
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		double[] grades = new double[10];
@@ -26,10 +25,11 @@ public class GradeStats {
 			}
 		}
 		
+		double average = sum / grades.length;
 		
-			}
-		}
-
+		System.out.printf("Average grade: %.2f\n", average);
+		System.out.printf("Maximun grade: %.2f\n", max);
+		System.out.printf("Minimun grade: %.2f\n", min);
 	}
-
 }
+
